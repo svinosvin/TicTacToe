@@ -15,7 +15,6 @@
 
 <div class="container">
     <div>
-        <p>Для разблокировки поля нажмите Начать Игру</p>
         <h2 id="hidden"><?php echo \app\core\Application::$app->user->getSessionVar()?></h2>
         <h1> Ваш уровень равен: <?php echo \app\core\Application::$app->user->getLvl()?></h1>
         <table>
@@ -37,7 +36,6 @@
         </table>
         <div class="container">
             <div class="div">
-                <button class="btn-start">Начать игру</button>
                 <button class="btn-stop">Сбросить</button>
             </div>
         </div>

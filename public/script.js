@@ -23,6 +23,7 @@ $(document).ready(function() {
             [0, 4, 8],
             [2, 4, 6],
         ];
+
         for (let comb of combs) {
             if (
                 cells[comb[0]].innerHTML == cells[comb[1]].innerHTML &&
@@ -40,6 +41,9 @@ $(document).ready(function() {
         return false;
     }
     let blocks = $(".btn-game")
+    function send(event){
+
+    }
     for (const block of blocks) {
 
         block.addEventListener('click',function send(event) {
@@ -75,12 +79,17 @@ $(document).ready(function() {
                 success: function(response)
                 {
                     setTimeout(function (){
+
                         let data = JSON.parse(response);
+
                         if(data.fieldExist == true)
                         {
-                            mass1[data.fieldO] = '0';
-                            blocks[data.fieldO].innerHTML = 0;
-                            blocks[data.fieldO].removeEventListener('click', send);
+                            console.log("dsad");
+                            mass1[data.field] = '0';
+                            blocks[data.field].innerHTML = 0;
+                            blocks[data.field].disabled = true;
+                            blocks[data.field].removeEventListener('click', send);
+
 
                         }
                         if(data.game == 1){

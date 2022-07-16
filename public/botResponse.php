@@ -27,9 +27,10 @@ $response['fieldExist'] = false;
 
 if($result == 0)
 {
-    $response['fieldO'] = \app\core\Game::findCombination($fields);
-    $fields[$response['fieldO']] = '0';
+
     $response['fieldExist'] = true;
+    $response['field'] = \app\core\Game::findCombination($fields);
+    $fields[$response['field']] = '0';
     $response['botWin'] = \app\core\Game::checkBotWin($fields);
     if($response['botWin']){
         $response['msg'] = "Game over!";
@@ -50,6 +51,7 @@ if($result == 2) {
     $response['msg'] = "Draw!";
     $response['game'] = 1;
 }
+;
 //
 
 
