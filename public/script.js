@@ -41,9 +41,7 @@ $(document).ready(function() {
         return false;
     }
     let blocks = $(".btn-game")
-    function send(event){
 
-    }
     for (const block of blocks) {
 
         block.addEventListener('click',function send(event) {
