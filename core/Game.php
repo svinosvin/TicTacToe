@@ -42,7 +42,7 @@ class Game
                     }
              }
                 if(!$check){
-                     $theBestCombs['100'] = $combs[$i][$j];
+                     $theBestCombs['100'] = $var;
 
                 }
                 else{
@@ -70,7 +70,7 @@ class Game
                     }
                 }
                 if(!$check){
-                    $theBestCombs['50'] = $combs[$i][$j];
+                    $theBestCombs['50'] = $var;
 
                 }
                 else{
@@ -86,9 +86,9 @@ class Game
             $countO = 0;
         }
         if($theBestCombs['100']!=null)
-            return $theBestCombs['100'][0];
+            return $theBestCombs['100'];
         if($theBestCombs['50']!=null)
-            return $theBestCombs['50'][0];
+            return $theBestCombs['50'];
 
         $key1 = 0;
         $max = max($bestComb);
