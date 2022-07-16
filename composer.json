@@ -1,0 +1,18 @@
+{
+    "name": "svinosvin/tic-tac-toe-test",
+    "autoload": {
+        "psr-4": {
+            "Svinosvin\\TicTacToeTest\\": "src/",
+            "app\\" : "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "svinosvin",
+            "email": "artemivanets@bk.ru"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}

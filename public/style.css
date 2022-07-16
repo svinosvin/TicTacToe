@@ -1,0 +1,71 @@
+.btn{
+    width: 200px;
+    height: 200px;
+    font-size: 100px;
+    font-weight: bold;
+    cursor: pointer;
+}
+body{
+   text-align: center;
+   background: orchid;
+}
+table{
+    background: black;
+}
+#hidden{
+    visibility: hidden;
+    display: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-new{
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    margin-top: 30px;
+    width: 200px;
+    height: 100px;
+    background: blueviolet;
+}
+.btn-new:hover{
+    animation-delay: .9ms;
+    background: white;
+    color: blueviolet;
+}
+.btn-start{
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    margin-top: 30px;
+    width: 200px;
+    height: 100px;
+    background: green;
+}
+.btn-start:hover{
+    animation-delay: .9ms;
+    background: white;
+    color: green;
+}
+.btn-stop{
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    margin-top: 30px;
+    width: 200px;
+    height: 100px;
+    background: crimson;
+}
+.btn-stop:hover{
+    animation-delay: .9ms;
+    background: white;
+    color: crimson;
+}
