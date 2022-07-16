@@ -35,4 +35,3 @@ include 'game.php';
 
 //include __DIR__ . '/../views/botResponse.php'
 
-?>
